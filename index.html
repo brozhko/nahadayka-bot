@@ -3,29 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deadline Assistant</title>
+  <title>Smart Deadlines</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-  <header class="header">
-    <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" class="icon" alt="bell">
-    <h1>Deadlines</h1>
-    <p>Stay on top of your deadlines and due dates.</p>
-  </header>
-
-  <div class="buttons">
-    <button id="addBtn">➕ Add Deadline</button>
-    <button id="removeBtn">❌ Remove</button>
-    <button id="filterBtn">🔍 Filter</button>
-  </div>
-
-  <section class="list">
-    <h2>Your Deadlines</h2>
-    <div id="deadlineContainer" class="cards">
-      <p class="empty">No deadlines found</p>
+  <div class="app">
+    <div class="header">
+      <img src="bell.png" alt="Bell" class="icon">
+      <h1>Deadlines</h1>
+      <p>Stay on top of your deadlines and due dates.</p>
     </div>
-  </section>
+
+    <div class="controls">
+      <button id="addBtn">➕ Add Deadline</button>
+      <button id="removeBtn">🗑 Remove</button>
+      <button id="filterBtn">🔍 Filter</button>
+    </div>
+
+    <h2>Your Deadlines</h2>
+    <div id="list" class="deadlines"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
