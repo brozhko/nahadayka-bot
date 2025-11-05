@@ -1,0 +1,157 @@
+/* Загальні стилі */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0f13;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Заголовок */
+.header {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+.header img {
+  width: 90px;
+  height: 90px;
+  opacity: 0.95;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 26px;
+  margin: 0;
+  font-weight: 600;
+  color: #fff;
+}
+
+.header p {
+  font-size: 15px;
+  color: #a8a8a8;
+  margin-top: 6px;
+  font-weight: 400;
+}
+
+/* Блок кнопок */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: #1a1e25;
+  color: #e7e7e7;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+  background-color: #242833;
+  transform: translateY(-1px);
+}
+
+button:active {
+  background-color: #2b2f3a;
+  transform: translateY(0);
+}
+
+/* Розділ "Your Deadlines" */
+.list {
+  width: 90%;
+  max-width: 500px;
+}
+
+.list h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* Картки дедлайнів */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background-color: #171a21;
+  border-radius: 14px;
+  padding: 18px 20px;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  background-color: #1e222c;
+  transform: translateY(-2px);
+}
+
+/* Тип завдання (LABA / KURS / SESSION) */
+.card .tag {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #5a5ae6, #8a80f5);
+  padding: 4px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* Назва */
+.card h3 {
+  margin: 12px 0 4px 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #f7f7f7;
+}
+
+/* Дата */
+.card .date {
+  font-size: 14px;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Кількість днів */
+.card .days-left {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 14px;
+  color: #ff9f43;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Коли список порожній */
+.empty {
+  color: #666;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 15px;
+  font-weight: 400;
+}
